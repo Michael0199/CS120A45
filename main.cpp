@@ -1,7 +1,4 @@
-//      **************************************************
-//      Find the min, max among three values
-//      Display three values in ascending order  min, other, max
-//     **************************************************
+
 #include <iostream>
 using namespace std;
 int main()
@@ -11,9 +8,17 @@ int main()
     cout << "Enter three integer values: ";
     cin >> num1 >> num2 >> num3;
 
-    /*
-    Code your program here
-    */
+ min=num3,min=num3,max=num3;
+   if (min>num2)
+    min=num2;
+    else max=num2;
+        if (min>num1){
+        med=min;
+        min=num1;}
+        else if (num1>max){
+        med=max;
+        max=num1;}
+        else med=num1;
 
-    cout << min << med << max << endl;
+    cout << min<<" "<< med <<" "<< max << endl;
 }
